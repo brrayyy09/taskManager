@@ -4,7 +4,7 @@ import Todos from '../schema/TodoSchema.js';
 import ora from 'ora';
 import chalk from 'chalk';
 
-async function input(){
+export async function input(){
     const answers = await inquirer.prompt([
         {
             type: 'input',
@@ -22,7 +22,7 @@ async function input(){
     return answers;
 }
 
-const askQuestions = async() => {
+export const askQuestions = async() => {
     const todoArray = [];
     let loop = false;
 

@@ -4,8 +4,11 @@
   "description": "",
   "exports": "./index.js",
   "type": "module",
+  "jest": {
+    "transform": {}
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +21,8 @@
     "mongoose": "^8.9.5",
     "nanoid": "^5.0.9",
     "ora": "^8.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
